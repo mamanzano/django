@@ -21,4 +21,9 @@ import miapp
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo-app/', views.saludo_app, name="saludo"),
+    path('',views.index, name='index'),
+    path('inicio',views.index, name='inicio'),
+    path('contacto/',views.contacto,name='contacto'),
+    path('contacto/<str:nombre>/',views.contacto,name='contacto'),
+    path('contacto/<str:nombre>/<str:apellidos>/',views.contacto,name='contacto'),
 ]
