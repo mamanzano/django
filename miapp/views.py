@@ -15,28 +15,13 @@ layout = """
 """
 
 def index(request):
-
-    lista = ['Futbol', 'Basquetball', 'volleyball']
-    li = ''
-
-    for element in lista:
-        li = li + '<li>' + element + '</li>' + ' '
-    
     return render(request, 'index.html')
 
-def saludo_app(request):
-    return HttpResponse(layout + '''
-        <h1> Hola, este es mi primer despligue con django </h1>
-        <h3> Soy Mario M </h3>
-    ''')
+def blog(request):
+    return render(request,'blog.html')
 
-def contacto(request, nombre=None, apellidos=None):
+def about(request):
+    return render(request, 'about.html')
 
-    html = ''
-
-    if nombre and apellidos:
-        html = f'<p> {nombre} {apellidos} </p>'
-
-    return HttpResponse(layout + '''
-    <p> Nombre del contacto: </p>
-    ''' + html)
+def projects(request):
+    return render(request,'projects.html')

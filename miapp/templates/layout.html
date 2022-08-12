@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="de que va el proyecto">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        {% block title %}
+            <!--Here title from each page -->
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'static/css/styles.css' %}" />
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>Hola a todos</h1>
+    </header>
+    <main>
+        <section class="seccionMain">
+            <section class="seccion">
+                <ul> 
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Proyectos</a></li>
+                </ul>
+            </section>
+        </section>
+        
+        <section class="content">
+            {% block content %}
+                <!--contenido de cada pagina-->
+            {% endblock%}
+        </section>
+
+    </main>
+    <footer>
+        copy
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.encabezado{
+    background-color: darkturquoise;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding-top: 18px;
+}
+.seccion{
+    width: 33%;
+    display: inline-block;
+    background-color :beige;
+    height: 300px;
+}
+.seccionMain
+{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
