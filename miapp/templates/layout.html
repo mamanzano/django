@@ -12,14 +12,12 @@
             <!--Here title from each page -->
         {% endblock %}
     </title>
-    <link rel="stylesheet" type="text/css" href="{% static 'static/css/styles.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
 </head>
 
 <body>
     <header class="encabezado">
-        <h1>Hola a todos</h1>
-    </header>
-    <main>
+        <img src="{% static 'img/logo.jpg' %}"  alt="">
         <section class="seccionMain">
             <section class="seccion">
                 <ul> 
@@ -29,7 +27,8 @@
                 </ul>
             </section>
         </section>
-        
+    </header>
+    <main>
         <section class="content">
             {% block content %}
                 <!--contenido de cada pagina-->
@@ -38,7 +37,7 @@
 
     </main>
     <footer>
-        copy
+        <strong>copy</strong>
     </footer>
 </body>
 

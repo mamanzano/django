@@ -1,20 +1,49 @@
-.encabezado{
-    background-color: darkturquoise;
+*{
+    background-color: #DFFBFF;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+}
+
+.encabezado{
+    margin-bottom: 80px;
+}
+
+.encabezado img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    display: block;
+    float: left;
+    margin-right: 100px;
+}
+.seccionMain{
+    margin-top: 30px;
+    padding-top: 10px;
+    width: 100%;
+    display: block;
     height: 100px;
-    text-align: center;
-    padding-top: 18px;
 }
-.seccion{
-    width: 33%;
-    display: inline-block;
-    background-color :beige;
-    height: 300px;
+
+.seccion ul{
+    list-style: none;
 }
-.seccionMain
-{
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+
+.seccion ul li{
+    line-height: 40px;
+    float: left;
+    list-style: none;
 }
+
+.seccion ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.content{
+    height: 400px;
+}
+
