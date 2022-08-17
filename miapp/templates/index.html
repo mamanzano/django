@@ -9,6 +9,10 @@
         Hola soy Mario Manzano 
     </p>
     <p>
-        desarrollador python con 7 años  de experiencia
+        desarrollador python con 7 años  de experiencia {{problema_latam}}
     </p>
+
+    {% if problema_latam  %}
+        <strong> la {{problema_latam}}, gran problema </strong>
+    {% endif %}
 {% endblock %}

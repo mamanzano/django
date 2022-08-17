@@ -15,7 +15,7 @@ layout = """
 """
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html',{'problema_latam': 'desigualdad'})
 
 def blog(request):
     return render(request,'blog.html')
